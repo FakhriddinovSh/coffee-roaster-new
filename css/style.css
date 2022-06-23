@@ -90,6 +90,7 @@ body{
 .hero-section{
     background-image: url("../Images/header-bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero{
@@ -189,8 +190,9 @@ body{
     background-size: contain;
     width: 402px;
     height: 300px;
-    top: -30px;
-    left: -90px;
+    top: -90px;
+    left: -190px;
+    z-index: 10;
 }
 
 .collection-list-item:nth-child(2){
@@ -205,7 +207,7 @@ body{
     width: 402px;
     height: 300px;
     top: 150px;
-    right: -350px;
+    right: -25%;
 }
 
 .collection-list-item:nth-child(4){
@@ -220,7 +222,7 @@ body{
     width: 316px;
     height: 269px;
     top: 0;
-    left: -100px;
+    left: -15%;
 }
 
 .collection-list-item:nth-child(2n){
