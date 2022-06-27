@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>23-homework</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
 </head>
 
-<body>
+<body class="body">
     <header class="site-header">
         <div class="container">
             <div class="header">
@@ -25,8 +25,8 @@
                         <li class="site-list-item">
                             <a class="site-list-item-link" href="#">ABOUT US</a>
                         </li>
-                        <li class="site-list-item">
-                            <a class="site-list-item-link" href="#">Create your plan</a>
+                        <li class="site-list-item js-modal-open">
+                            <a class="site-list-item-link" href="#">CREATE YOUR PLAN</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,7 +50,7 @@
                             coffees
                             from our best roasters delivered directly to your door, at your schedule.
                         </p>
-                        <a class="hero-button" href="#">Create your plan</a>
+                        <a class="hero-button" href="#">CREATE YOUR PLAN</a>
                     </div>
 
                     <div class="hero-right-image">
@@ -166,67 +166,71 @@
         <section class="how-it">
             <div class="container">
                 <h2 class="how-it-heading">HOW IT WORKS</h2>
-            </div>
 
-            <div class="rectangle-box">
-                <span class="rectangles"></span>
-                <span class="rectangles"></span>
-                <span class="rectangles"></span>
-            </div>
 
-            <ul class="rectangle-list">
-                <li class="rectangle-list-item">
-                    <p class="rectangle-list-item-num">01</p>
+                <div class="rectangle-box">
+                    <span class="rectangles"></span>
+                    <span class="rectangles"></span>
+                    <span class="rectangles"></span>
+                </div>
 
-                    <div class="rectangle-list-item-heading">
-                        <h3>
-                            PICK YOUR COFFEE
-                        </h3>
-                    </div>
-                    <div class="rectangle-list-item-desc">
-                        <p>
-                            Select from our evolving range of artisan coffees. Our beans are ethically sourced and we
-                            pay
-                            fair prices for them. There are new coffees in all profiles every month for you to try out.
-                        </p>
-                    </div>
-                </li>
+                <ul class="rectangle-list">
+                    <li class="rectangle-list-item">
+                        <p class="rectangle-list-item-num">01</p>
 
-                <li class="rectangle-list-item">
-                    <p class="rectangle-list-item-num">02</p>
+                        <div class="rectangle-list-item-heading">
+                            <h3>
+                                PICK YOUR COFFEE
+                            </h3>
+                        </div>
+                        <div class="rectangle-list-item-desc">
+                            <p>
+                                Select from our evolving range of artisan coffees. Our beans are ethically sourced and
+                                we
+                                pay
+                                fair prices for them. There are new coffees in all profiles every month for you to try
+                                out.
+                            </p>
+                        </div>
+                    </li>
 
-                    <div class="rectangle-list-item-heading">
-                        <h3>
-                            CHOOSE THE FREQUENCY
-                        </h3>
-                    </div>
-                    <div class="rectangle-list-item-desc">
-                        <p>
-                            Customize your order frequency, quantity, even your roast style and grind type. Pause, skip
-                            or cancel your subscription with no commitment through our online portal.
-                        </p>
-                    </div>
-                </li>
+                    <li class="rectangle-list-item">
+                        <p class="rectangle-list-item-num">02</p>
 
-                <li class="rectangle-list-item">
-                    <p class="rectangle-list-item-num">03</p>
+                        <div class="rectangle-list-item-heading">
+                            <h3>
+                                CHOOSE THE FREQUENCY
+                            </h3>
+                        </div>
+                        <div class="rectangle-list-item-desc">
+                            <p>
+                                Customize your order frequency, quantity, even your roast style and grind type. Pause,
+                                skip
+                                or cancel your subscription with no commitment through our online portal.
+                            </p>
+                        </div>
+                    </li>
 
-                    <div class="rectangle-list-item-heading">
-                        <h3>
-                            RECEIVE AND ENJOY!
-                        </h3>
-                    </div>
-                    <div class="rectangle-list-item-desc">
-                        <p>
-                            We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-                            world-class coffees curated to provide a distinct tasting experience.
-                        </p>
-                    </div>
-                </li>
-            </ul>
+                    <li class="rectangle-list-item">
+                        <p class="rectangle-list-item-num">03</p>
 
-            <div class="rectangle-button">
-                <a href="#">CREATE YOUR PLAN</a>
+                        <div class="rectangle-list-item-heading">
+                            <h3>
+                                RECEIVE AND ENJOY!
+                            </h3>
+                        </div>
+                        <div class="rectangle-list-item-desc">
+                            <p>
+                                We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+                                world-class coffees curated to provide a distinct tasting experience.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="rectangle-button">
+                    <a href="#">CREATE YOUR PLAN</a>
+                </div>
             </div>
         </section>
     </main>
@@ -247,7 +251,7 @@
                             <a href="#">ABOUT US</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#">Create your plan</a>
+                            <a class="js-modal-open" href="#">Create your plan</a>
                         </li>
                     </ul>
                 </nav>
@@ -267,6 +271,36 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal modal-active">
+        <div class="modal-contents">
+            <div class="modal-heading">
+                <h2>ORDER SUMMARY</h2>
+            </div>
+            <div class="modal-box">
+                <div class="modal-center">
+                    <p>
+                        “I drink my coffee as <span class="modal-center-green">Filter</span>, with a <span
+                            class="modal-center-green">Decaf</span> type of bean. <span
+                            class="modal-center-green">250g</span> ground ala <span
+                            class="modal-center-green">Cafetiére</span>, sent to me <span
+                            class="modal-center-green">Every Week</span>.”
+                    </p>
+                    <p>
+                        Is this correct? You can proceed to checkout or go back to plan selection if something is off.
+                        Subscription discount codes can also be redeemed at the checkout.
+                    </p>
+                </div>
+                <div class="modal-bottom">
+                    <p>$14.00/ mo</p>
+                    <button class="modal-checkout">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
