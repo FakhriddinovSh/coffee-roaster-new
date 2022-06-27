@@ -34,6 +34,7 @@
 
 img{
     display: block;
+    vertical-align: middle;
 }
 
 body{
@@ -68,6 +69,10 @@ body{
 .site-list{
     display: flex;
     list-style: none;
+}
+
+.site-list-item{
+    padding: 45px 0;
 }
 
 .site-list-item:nth-child(2){
@@ -489,7 +494,7 @@ body{
 
 .footer{
     background-image: url("../Images/header-bg.jpg");
-    margin: 20px 20px 0 20px;
+    margin: 20px 0px 0 0px;
 }
 
 .footer-box{
@@ -617,4 +622,227 @@ body{
     color: #FFFFFF;
     text-decoration: none;
     border: none;
+}
+
+/* Next Page ------------------------------------------------------------------------- */
+
+
+
+.commitment{
+    position: relative;
+    background-image: url("../Images/commitment-bg.png");
+    background-size: contain;
+    margin: 20px;
+}
+
+.commitment::before{
+    position: absolute;
+    content: "";
+    background-image: url(../Images/collection-bg-leaf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    left: -5%;
+    top: 40px;
+}
+
+.commitment-box{
+    display: flex;
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+.commitment-image{
+    margin-left: 145px;
+}
+
+.commitment-info{
+    width: 626px;
+    margin-left: 185px;
+}
+
+.commitment-info > h2{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    font-variant: small-caps;
+    color: #000000;
+}
+
+.commitment-info > p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+}
+
+
+.quality{
+    position: relative;
+    background-image: url(../Images/about-bg.jpg);
+    background-size: contain;
+    margin: 20px;
+}
+
+.quality::after{
+    position: absolute;
+    content: "";
+    background: url("../Images/quality-img.jpg") no-repeat;
+    background-size: contain;
+    width: 550px;
+    height: 500px;
+    top: -90px;
+    right: 30px;
+}
+
+.quality-box{
+    width: 639px;
+    margin-left: 145px;
+    padding-top: 100px;
+    padding-bottom: 118px;
+}
+
+.quality-heading{
+    width: 397px;
+    margin-bottom: 24px;
+}
+
+.quality-heading > h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.quality-box > p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+
+.quarter{
+    width: 100%;
+    background: url("../Images/how-it-works-bg.png") no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+.quarter-heading{
+    width: 431px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding-top: 50px;
+}
+
+.quarter-heading > h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.quarter-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-bottom: 100px;
+}
+
+.quarter-list-item:first-child{
+    padding: 95px 182px 38px 20px;
+}
+
+.quarter-list-item{
+    position: relative;
+    width: 433px;
+    margin-right: 20px;
+    background-color: #F8F8F2;
+    padding: 140px 182px 40px 20px;
+}
+
+.quarter-list-item::after{
+    position: absolute;
+    content: "";
+    background: url("../Images/headquarter-one.svg") no-repeat;
+    width: 120px;
+    height: 150px;
+    top: 35px;
+    right: 40px;
+}
+
+.quarter-list-item:nth-child(2){
+    position: relative;
+}
+
+.quarter-list-item:nth-child(2):after{
+    position: absolute;
+    content: "";
+    background: url("../Images/headquarter-two.svg") no-repeat;
+    width: 120px;
+    height: 150px;
+    top: 35px;
+    right: 40px;
+}
+
+.quarter-list-item:nth-child(3){
+    position: relative;
+}
+
+.quarter-list-item:nth-child(3):after{
+    position: absolute;
+    content: "";
+    background: url("../Images/headquarter-three.svg") no-repeat;
+    width: 120px;
+    height: 150px;
+    top: 35px;
+    right: 40px;
+}
+
+
+.quarter-list-item > h3{
+    width: 231px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    font-variant: small-caps;
+    color: #333333;
+}
+
+.quarter-list-box{
+    margin-top: 10px;
+}
+
+.quarter-list-box:first-child{
+    margin-top: 8px;
+}
+
+.quarter-list-box > a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.quarter-list-box > address{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.quarter-list-box > address:nth-child(2){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quarter-list-box > address:nth-child(3){
+    margin-bottom: 10px;
 }
