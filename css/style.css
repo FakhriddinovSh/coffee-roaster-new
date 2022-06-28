@@ -43,6 +43,16 @@ body{
     overflow-x: hidden;
 }
 
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .container{
     max-width: 1380px;
     margin: 0 auto;
@@ -867,4 +877,226 @@ body{
     to{
         transform: translateY(0);
     }
+}
+
+
+.create-box::after{
+    position: absolute;
+    content: "";
+    background-image: none;
+    width: 0px;
+    height: 0px;
+    top: 0%;
+    right: 0%;
+}
+
+.create-section{
+    padding-bottom: 80px;
+}
+
+.create-it{
+    margin-top: 20px;
+}
+
+
+
+/* Create Plan Page */
+.drinking{
+    background-image: url("../Images/collection-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.drinking-box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.drinking-type-list{
+    list-style: none;
+}
+
+.drinking-type-list-item:first-child{
+    padding-top: 50px;
+}
+
+.drinking-type-list-item{
+    margin-bottom: 35px;
+}
+
+.drinking-list-item-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.drinking-list-item-first{
+    color: #000000;
+    border-bottom: 3px dashed #C99B67;
+}
+
+.drinking-option-box{
+    padding-top: 50px;
+    padding-right: 142px;
+}
+
+
+
+.drinking-heading{
+    position: relative;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    font-variant: small-caps;
+    color: #000000;
+}
+
+.drinking-heading::after{
+    position: absolute;
+    content: "";
+    top: 20px;
+    width: 18px;
+    height: 10px;
+    margin-left: 55px;
+    background-image: url("../Images/down-icon.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.drinking-heading:first-child{
+    margin-bottom: 20px;
+}
+
+.drinking-summary{
+    position: relative;
+    width: 660px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    background-color: #C99B67;
+}
+
+.drinking-summary::before{
+    position: absolute;
+    content: "";
+    background-image: url("../Images/collection-bg-leaf.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    bottom: 0px;
+    left: -750px;
+    z-index: 10;
+}
+
+.drinking-summary-heading{
+    margin-bottom: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.drinking-summary-description{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+}
+
+.drinking-summary-description > span{
+    color: #333333;
+}
+
+.drinking-button{
+    display: inline-block;
+    padding: 16px 24px;
+    background: #0A775F;
+    border-radius: 100px;
+    color: #fff;
+    float: right;
+}
+
+.drinking-form{
+    width: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drinking-label{
+    padding-top: 30px;
+    background: #0A775F;
+    opacity: 0.2;
+}
+
+.drinking-choice-list{
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.drinking-choice-list::after{
+    position: absolute;
+    content: "";
+    background-image: url("../Images/collection-bg-leaf2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    bottom: -250px;
+    right: -450px;
+    z-index: 10;
+}
+
+.drinking-choice-item{
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    background: #0A775F;
+    opacity: 0.2;
+}
+
+.drinking-choice-content-box{
+    width: 173px;
+}
+
+.drinking-choice-content-box > h4{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.drinking-choice-content-box > p{
+    padding-bottom: 80px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.drinking-choice-desc{
+    padding-bottom: 40px;
+}
+
+.drinking-input:checked ~ .drinking-choice-item{
+    background: #0A775F;
+    opacity: 1;
+}
+
+.create-footer{
+    margin-top: 50px;
 }

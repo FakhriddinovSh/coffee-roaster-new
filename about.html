@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee About Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -23,14 +23,14 @@
                             <a class="site-list-item-link" href="./index.html">HOME</a>
                         </li>
                         <li class="site-list-item">
-                            <a class="site-list-item-link" href="#aboutus">ABOUT US</a>
+                            <a class="site-list-item-link" href="#">ABOUT US</a>
                         </li>
-                        <!-- <li class="site-list-item js-modal-open">
-                            <a class="site-list-item-link" href="#">CREATE YOUR PLAN</a>
-                        </li> -->
-                        <li class="site-list-item ">
+                        <li class="site-list-item">
+                            <a class="site-list-item-link" href="./plan.html">CREATE YOUR PLAN</a>
+                        </li>
+                        <!-- <li class="site-list-item ">
                             <button class="site-list-item-link js-modal-open">CREATE YOUR PLAN</button>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </div>
@@ -43,9 +43,9 @@
                 <div class="hero">
                     <div class="hero-info">
                         <div class="hero-heading">
-                            <h1 class="hero-heading-content">
+                            <h2 class="hero-heading-content">
                                 About Us
-                            </h1>
+                            </h2>
                         </div>
                         <p class="hero-description">
                             Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee
@@ -175,6 +175,36 @@
             </div>
         </div>
     </footer>
+
+
+    <div class="modal">
+        <div class="modal-contents">
+            <div class="modal-heading">
+                <h2>ORDER SUMMARY</h2>
+            </div>
+            <div class="modal-box">
+                <div class="modal-center">
+                    <p>
+                        “I drink my coffee as <span class="modal-center-green">Filter</span>, with a <span
+                            class="modal-center-green">Decaf</span> type of bean. <span
+                            class="modal-center-green">250g</span> ground ala <span
+                            class="modal-center-green">Cafetiére</span>, sent to me <span
+                            class="modal-center-green">Every Week</span>.”
+                    </p>
+                    <p>
+                        Is this correct? You can proceed to checkout or go back to plan selection if something is off.
+                        Subscription discount codes can also be redeemed at the checkout.
+                    </p>
+                </div>
+                <div class="modal-bottom">
+                    <p>$14.00/ mo</p>
+                    <button class="modal-checkout">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
