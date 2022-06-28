@@ -200,6 +200,17 @@ body{
     z-index: 10;
 }
 
+.js-modal-open{
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
 .collection-list-item:nth-child(2){
     position: relative;
 }
@@ -553,6 +564,7 @@ body{
     width: 561px;
     margin: 70px auto;
     background: #fff;
+    animation: slowmotion 1s 1;
 }
 
 .modal-heading{
@@ -845,4 +857,14 @@ body{
 
 .quarter-list-box > address:nth-child(3){
     margin-bottom: 10px;
+}
+
+
+@keyframes slowmotion{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
