@@ -903,9 +903,8 @@ body{
 /* Create Plan Page */
 .drinking{
     background-image: url("../Images/collection-bg.jpg");
-    background-repeat: no-repeat;
     background-position: center;
-    margin: 0;
+    margin: 20px;
 }
 
 .drinking-box{
@@ -917,10 +916,6 @@ body{
 
 .drinking-type-list{
     list-style: none;
-}
-
-.drinking-type-list-item:first-child{
-    padding-top: 50px;
 }
 
 .drinking-type-list-item{
@@ -964,10 +959,12 @@ body{
     top: 20px;
     width: 18px;
     height: 10px;
-    margin-left: 55px;
+    margin-left: 45px;
     background-image: url("../Images/down-icon.svg");
     background-repeat: no-repeat;
     cursor: pointer;
+    transition: transform 0.6s ease;
+
 }
 
 .drinking-heading:first-child{
@@ -977,26 +974,13 @@ body{
 .drinking-summary{
     position: relative;
     width: 660px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 40px;
     padding-left: 20px;
     padding-bottom: 40px;
     padding-right: 20px;
     background-color: #C99B67;
-}
-
-.drinking-summary::before{
-    position: absolute;
-    content: "";
-    background-image: url("../Images/collection-bg-leaf.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 402px;
-    height: 300px;
-    bottom: 0px;
-    left: -750px;
-    z-index: 10;
 }
 
 .drinking-summary-heading{
@@ -1046,19 +1030,6 @@ body{
     list-style: none;
 }
 
-.drinking-choice-list::after{
-    position: absolute;
-    content: "";
-    background-image: url("../Images/collection-bg-leaf2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 402px;
-    height: 300px;
-    bottom: -250px;
-    right: -450px;
-    z-index: 10;
-}
-
 .drinking-choice-item{
     margin-right: 20px;
     padding-top: 30px;
@@ -1100,3 +1071,79 @@ body{
 .create-footer{
     margin-top: 50px;
 }
+
+
+.drinking-details-box{
+    display: block;
+}
+
+.drinking-details{
+    width: 660px;
+    margin-right: 40px;
+}
+ 
+
+.drinking-heading{
+    list-style: none;
+}
+
+.drinking-details:nth-child(1){
+    position: relative;
+}
+
+.drinking-details:nth-child(1)::after{
+    position: absolute;
+    content: "";
+    background-image: url("../Images/collection-bg-leaf2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    top: 0%;
+    right: -65%;
+    bottom: 0;
+    z-index: 10;
+}
+
+
+
+.drinking-details:nth-child(3){
+    position: relative;
+}
+
+.drinking-details:nth-child(3)::after{
+    position: absolute;
+    content: "";
+    background-image: url("../Images/collection-bg-leaf.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    top: 0%;
+    left: -880px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.drinking-details:nth-child(5){
+    position: relative;
+}
+
+.drinking-details:nth-child(5)::after{
+    position: absolute;
+    content: "";
+    background-image: url("../Images/collection-bg-leaf3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 402px;
+    height: 300px;
+    top: 0%;
+    left: -980px;
+    bottom: 0;
+    z-index: 2;
+}
+
+.drinking-details[open] .drinking-heading::after{
+    transform: rotate(180deg);
+} 
+
